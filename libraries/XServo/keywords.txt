@@ -1,0 +1,25 @@
+#######################################
+# Syntax Coloring Map XServo
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+XServo	KEYWORD1	XServo
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+sweep   KEYWORD2
+attach	KEYWORD2
+detach	KEYWORD2
+write	KEYWORD2
+read	KEYWORD2
+attached	KEYWORD2
+writeMicroseconds	KEYWORD2
+readMicroseconds	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

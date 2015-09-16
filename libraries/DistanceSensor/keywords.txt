@@ -1,0 +1,6 @@
+DistanceSensor KEYWORD1
+readDistanceAtAngle KEYWORD2
+getDistanceAtAngle KEYWORD2
+printDistances KEYWORD2
+readPING KEYWORD2
+microsecondsToCentimeters KEYWORD2
