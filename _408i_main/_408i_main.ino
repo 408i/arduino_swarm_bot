@@ -62,20 +62,6 @@ void startMoving() {
 }
 
 /**
-* Sweeps the sensor platform and calls for sensor reads
-* at each position.
-* Modified from Sweep example.
-*/
-void sweepSensorPlatform() {
-	int pos = 0;
-	for(pos = 0; pos < degreesOfRotation; pos += 1){
-		sensorPlatformServo.write(pos);
-		delay(15);
-		forwardUltrasonic.readDistanceAtAngle(pos);
-	}
-}
-
-/**
 * Shorthand for calling serial port to write a debug message
 * @param {String} message - the string message to print
 */
