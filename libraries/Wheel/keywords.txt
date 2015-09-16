@@ -1,4 +1,20 @@
-Wheel KEYWORD1
-setSpeed KEYWORD2
-getSpeed KEYWORD2
-stop KEYWORD2
+#######################################
+# Syntax Coloring Map Wheel
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Wheel	KEYWORD1	Wheel
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+setSpeed   KEYWORD2
+getSpeed	KEYWORD2
+stop	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
