@@ -229,9 +229,14 @@ XServo::XServo(int pin, int angleRange)
 */
 void XServo::sweep( int resolution, void (*callback)(int) ){
   int pos = 0;
+  Serial.print(resolution);
+  //Serial.print(servos[this->servoIndex]._angleRange);
+  Serial.println();
+
+  // for(pos = 0; pos < servos[this->servoIndex]._angleRange; pos += resolution){
   for(pos = 0; pos < servos[this->servoIndex]._angleRange; pos += resolution){
     this->write(pos);
-    delay(12); // wait for servo to settle
+    delay(30); // wait for servo to settle
 
     // call the callback function, supply the position to it
     (*callback)(pos);
