@@ -62,19 +62,23 @@ void sweepStepper(int pos) {
 }
 
 void sweep(){
+  int start = 37;
+  int ends = 127;
 	int pos = 0;
-	for(pos = 0; pos <= 180; pos += 1) // goes from 0 degrees to 180 degrees 
+	for(pos = start; pos <= ends; pos += 2) // goes from 0 degrees to 180 degrees 
 	{                                  // in steps of 1 degree 
 		sensorPlatformServo.write(pos);              // tell servo to go to position in variable 'pos' 
 		 //delay(15-7);                       // waits 15ms for the servo to reach the position 
 		 sweepStepper(pos);
 	}
-	for(pos = 180; pos>=0; pos-=1)     // goes from 180 degrees to 0 degrees 
+ /*
+	for(pos = ends; pos>=start; pos-=1)     // goes from 180 degrees to 0 degrees 
 	{                                
 		sensorPlatformServo.write(pos);              // tell servo to go to position in variable 'pos' 
 		 //delay(15-7);                       // waits 15ms for the servo to reach the position 
 		 sweepStepper(pos);
 	}
+ */
 }
 
 /**
