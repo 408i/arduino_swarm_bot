@@ -12,6 +12,7 @@
 * Globals init
 */
 // Wheels
+//moist
 int leftA = 3;
 int leftB = 2;
 int rightA = 13;
