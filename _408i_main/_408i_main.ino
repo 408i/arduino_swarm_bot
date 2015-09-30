@@ -27,14 +27,14 @@ int degreesOfRotation = 180;
 Servo sensorPlatformServo;
 
 // Ultrasonic Sensors
-DistanceSensor forwardUltrasonic(7);
+DistanceSensor forwardUltrasonic(4);
 
 /**
 * Runs once at board boot
 */
 void setup() {
 	// Run a serial connection for debugging messages
-	sensorPlatformServo.attach(9);
+	sensorPlatformServo.attach(5);
 
 	Serial.begin(9600);
 
