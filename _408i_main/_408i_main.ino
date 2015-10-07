@@ -11,9 +11,7 @@
 /**
 * Globals init
 */
-//gurpreet
 // Wheels
-//moist
 int leftA = 3;
 int leftB = 2;
 int rightA = 13;
@@ -87,10 +85,11 @@ void sweep(){
 * Sets the bot's wheel speed
 */
 void startMoving() {
-	int speedValue = 255; // 0-255
-	leftWheel.setSpeed(speedValue);
-	rightWheel.setSpeed(speedValue);
-	Serial.print(speedValue);
+	int leftspeedValue = 200; // 0-255
+  int rightspeedValue = 120;
+	leftWheel.setSpeed(leftspeedValue);
+	rightWheel.setSpeed(rightspeedValue);
+	//Serial.print(speedValue);
 	d("/255 Speed set.");
 }
 
